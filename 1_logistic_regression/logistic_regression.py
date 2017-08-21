@@ -2,6 +2,9 @@
 __author__ = "Pallavi Ramicetty"
 
 import numpy as np
+from utils import load_dataset
+import sys
+import os
 
 # Loaded dataset
 train_set_x_orig, train_set_y, test_set_x_orig, test_set_y, classes = load_dataset()
