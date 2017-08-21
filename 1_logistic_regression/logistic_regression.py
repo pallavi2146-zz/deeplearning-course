@@ -2,9 +2,7 @@
 __author__ = "Pallavi Ramicetty"
 
 import numpy as np
-from utils import load_dataset
-import sys
-import os
+from utils import load_dataset, sigmoid
 
 # Loaded dataset
 train_set_x_orig, train_set_y, test_set_x_orig, test_set_y, classes = load_dataset()
@@ -17,12 +15,6 @@ test_set_x_flatten = test_set_x_orig.reshape(test_set_x_orig.shape[1]*test_set_x
 train_set_x = train_set_x_flatten/255
 test_set_x = test_set_x_flatten/255
 
-
-def sigmoid(z):
-
-    y_hat = 1 / (1 + np.exp(-z))
-
-    return y_hat
 
 
 def initialize_parameters(dim):

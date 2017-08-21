@@ -3,10 +3,7 @@ __author__ = "Pallavi Ramicetty"
 
 import h5py
 import numpy as np
-import sys
-import os
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "../"))
 def load_dataset():
 
     train_dataset = h5py.File("../datasets/train_catvnoncat.h5", "r")
@@ -23,6 +20,13 @@ def load_dataset():
     classes = np.array(test_dataset["list_classes"][:])
 
     return train_set_x_orig, train_set_y_orig, test_set_x_orig, test_set_y_orig, classes
+
+
+def sigmoid(z):
+
+    A = 1 / (1 + np.exp(-z))
+
+    return A
 
 
 
