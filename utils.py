@@ -28,5 +28,35 @@ def sigmoid(z):
 
     return A
 
+def nn_sigmoid(z):
+
+    A = 1 / (1 + np.exp(-z))
+    cache = z
+
+    return A, cache
 
 
+def relu(z):
+
+    A = np.maximum(0, z)
+    cache = z
+
+    return A, cache
+def relu_backward(dA, cache):
+
+    Z = cache
+    dZ = np.array(dA, copy=True)
+    dZ[Z <= 0] = 0
+
+    return dZ
+
+def sigmoid_backward(dA, cache):
+
+    Z = cache
+
+    s = 1 / (1 + np.exp(-Z))
+    dZ = dA * s * (1 - s)
+
+    assert (dZ.shape == Z.shape)
+
+    return dZ
