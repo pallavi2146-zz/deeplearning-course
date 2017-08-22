@@ -110,7 +110,7 @@ def update_parameters(parameters, grads, learning_rate):
     return parameters
 
 
-def model(X, Y, n_h, num_iterations = 10000, print_cost= True, learning_rate= 00.2):
+def model(X, Y, n_h, num_iterations = 10000, print_cost= True, learning_rate= 0.0075):
 
     n_x = X.shape[0]
     n_y = Y.shape[0]
@@ -131,11 +131,11 @@ def model(X, Y, n_h, num_iterations = 10000, print_cost= True, learning_rate= 00
 
     print (
         'Train Accuracy: %d' % float(
-            (np.dot(test_set_y, train_predictions.T) + np.dot(1 - test_set_y, 1 - train_predictions.T)) / float(
-                test_set_y.size) * 100) + '%')
+            (np.dot(train_set_y, train_predictions.T) + np.dot(1 - train_set_y, 1 - train_predictions.T)) / float(
+                train_set_y.size) * 100) + '%')
 
     print (
-        'Accuracy: %d' % float(
+        'Test Accuracy: %d' % float(
             (np.dot(test_set_y, test_predictions.T) + np.dot(1 - test_set_y, 1 - test_predictions.T)) / float(
                 test_set_y.size) * 100) + '%')
     return parameters
@@ -150,7 +150,7 @@ def predict(parameters, X):
 
 if __name__=="__main__":
 
-    parameters = model(train_set_x, train_set_y, n_h=4, num_iterations=10000, print_cost=True)
+    parameters = model(train_set_x, train_set_y, n_h=7, num_iterations=10000, print_cost=True)
 
 
 
