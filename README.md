@@ -11,6 +11,11 @@ Build the model such that it can classify cat or non-cat.
 ## Dataset
 Dataset size
 
+## Models
+* [Logistic Regression](1_logistic_regression).
+* [Neural Networks with one hidden layer](2_neural_network).
+* [L_layer Neural Networks](3_deep_neural_networks)
+
 ## Setup
 
 
