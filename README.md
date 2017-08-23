@@ -1,8 +1,8 @@
-# deeplearning-course
-deeplearning.ai course by Andrew NG. Its about simple logistic regression and neural networks implementation using python numpy .
+# Deeplearning
+[deeplearning.ai](https://www.deeplearning.ai/) course by Andrew NG. Its about simple logistic regression and neural networks implementation using python numpy .
 
-## problem statement
-Build the model such that it can classify cat or non-cat.
+## Problem statement
+Build the model such that it can classify ```cat``` or ```non-cat```.
 
 | Cat     | Non-cat    |
 | --------|---------|
@@ -17,11 +17,13 @@ Dataset size
 * [L_layer Neural Networks](3_deep_neural_networks)
 
 ## Setup
-
-
 ```
 $ git clone https://github.com/pallavi2146/deeplearning-course.git
 $ cd deeplearning-course
 $ make install # creats virtual environment and install needed libraries and packages.
 $ source env/bin/activate # activates virtual environment
+$ # run one of the bellow commands
+$ python 1_logistic_regression/logistic_regression.py
+$ python 2_neural_network/neural_network_one_hidden_layer.py
+$ python 3_deep_neural_network/deep_neural_network.py
 ```
