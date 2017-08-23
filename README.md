@@ -16,6 +16,10 @@ Dataset size
 * [Neural Networks with one hidden layer](2_neural_network).
 * [L_layer Neural Networks](3_deep_neural_networks)
 
+## Architectures
+<img src="images/all_architectures.png"/> 
+
+
 ## Setup
 ```
 $ git clone https://github.com/pallavi2146/deeplearning-course.git
