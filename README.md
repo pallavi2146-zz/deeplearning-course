@@ -1,6 +1,16 @@
 # deeplearning-course
 deeplearning.ai course by Andrew NG. Its about simple logistic regression and neural networks implementation using python numpy .
 
+## problem statement
+Build the model such that it can classify cat or non-cat.
+
+| Cat     | Non-cat    |
+| --------|---------|
+| <img src="images/cat.jpg" width=300 height = 300/> | <img src="images/non_cat.jpg" width=300 height = 300/>   |
+
+## Dataset
+Dataset size
+
 ## Setup
 
 
