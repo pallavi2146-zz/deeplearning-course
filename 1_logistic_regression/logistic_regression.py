@@ -1,8 +1,18 @@
 
 __author__ = "Pallavi Ramicetty"
 
+"""
+Reference :
+http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/
+https://stats.stackexchange.com/questions/211436/why-do-we-normalize-images-by-subtracting-the-datasets-image-mean-and-not-the-c
+"""
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "../"))
 import numpy as np
 from utils import load_dataset, sigmoid
+
+
 
 # Loaded dataset
 train_set_x_orig, train_set_y, test_set_x_orig, test_set_y, classes = load_dataset()
