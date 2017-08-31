@@ -3,11 +3,14 @@ __author__ = "Pallavi Ramicetty"
 
 import h5py
 import numpy as np
+import os
+import sys
+
 
 def load_dataset():
 
-    train_dataset = h5py.File("../datasets/train_catvnoncat.h5", "r")
-    test_dataset = h5py.File("../datasets/test_catvnoncat.h5", "r")
+    train_dataset = h5py.File("datasets/train_catvnoncat.h5", "r")
+    test_dataset = h5py.File("datasets/test_catvnoncat.h5", "r")
 
     train_set_x_orig = np.array(train_dataset["train_set_x"][:])
     train_set_y_orig = np.array(train_dataset["train_set_y"][:])
